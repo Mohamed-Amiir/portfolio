@@ -2,214 +2,283 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- =====BOX ICONS===== -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
     <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Mohamed Amir - Portfolio</title>
+
+    <title>Portfolio website complete</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <a href="#" class="logo">Mohamed Amir</a>
-        <ul class="nav-links">
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Mohamed</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
       </nav>
-      <button class="menu-toggle">
-        <i class="fas fa-bars"></i>
-      </button>
     </header>
 
-    <section class="main">
-      <div class="main-content">
-        <h2>
-          <span class="hi">Hello,</span><br />
-          <span class="im">I'm</span>
-          <span class="mohamed">Mohamed.</span><br /><br />
-          <span class="role">Junior Software Developer</span>
-        </h2>
-        <br />
-        <a href="#projects" class="main-btn">Explore My Work</a>
-        <a
-          href="https://drive.google.com/file/d/1UzBrwTlMbjSS2l_FU9sD9vLlKuttG9lc/view?usp=drive_link"
-          class="main-btn"
-          >View My Resume</a
-        >
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/mohamed-amiir/"
-            ><i class="fab fa-linkedin"></i
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />I'am <span class="home__title-color">Mohamed</span><br />
+            Junior Software Developer
+          </h1>
+
+          <a href="https://drive.google.com/file/d/1UzBrwTlMbjSS2l_FU9sD9vLlKuttG9lc/view?usp=drive_link" class="button">Resume</a>
+        </div>
+
+        <div class="home__social">
+          <a
+            href="https://www.linkedin.com/in/mohamed-amiir/"
+            class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
           ></a>
-          <a href="https://github.com/Mohamed22198"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://wa.me/+201099523542"
-            ><i class="fab fa-whatsapp"></i
-          ></a>
-          <a href="https://www.facebook.com/profile.php?id=100009078180663"
-            ><i class="fab fa-facebook"></i
+          <a href="https://github.com/Mohamed22198" class="home__social-icon"
+            ><i class="bx bxl-github"></i
           ></a>
         </div>
-      </div>
-      <div class="photo">
-        <img src="/images/background.jpeg" alt="Profile Photo" width="400px" />
-      </div>
-    </section>
 
-    <section class="skills" id="skills">
-      <h2 class="title">Skills</h2>
-      <div class="content">
-        <div class="row">
-          <div class="skills-card">
-            <div class="icon">
-              <i class="fab fa-html5"></i>
-            </div>
-            <div class="info">
-              <h3>Frontend</h3>
-              <p>
-                HTML <i class="fab fa-html5"></i><br />CSS
-                <i class="fab fa-css3-alt"></i><br />
-                JavaScript <i class="fab fa-js"></i>
-              </p>
-            </div>
-          </div>
-          <div class="skills-card">
-            <div class="icon">
-              <i class="fas fa-server"></i>
-            </div>
-            <div class="info">
-              <h3>Backend</h3>
-              <p>
-                Node.js <i class="fab fa-node"></i><br />Express.js <br />REST
-                APIs
-              </p>
-            </div>
-          </div>
-          <div class="skills-card">
-            <div class="icon">
-              <i class="fas fa-database"></i>
-            </div>
-            <div class="info">
-              <h3>Database</h3>
-              <p>MongoDB <br />MySQL <br />Oracle <br /></p>
-            </div>
-          </div>
+        <div class="home__img">
+          <svg
+            class="home__blob"
+            viewBox="0 0 479 467"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="mask0" mask-type="alpha">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+            </mask>
+            <g mask="url(#mask0)">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+              <image
+                class="home__blob-img"
+                x="50"
+                y="60"
+                href="assets/img/perfil.png"
+              />
+            </g>
+          </svg>
         </div>
-        <div class="row">
-          <div class="skills-card">
-            <div class="icon">
-              <i class="fas fa-laptop-code"></i>
-            </div>
-            <div class="info">
-              <h3>Software principles</h3>
-              <p>
-                Algorithms <br />
-                Data Structures <br />
-                OOP <br />
-                DBMS <br />
-                SDLC
-              </p>
-            </div>
-          </div>
-          <div class="skills-card">
-            <div class="icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <div class="info">
-              <h3>Programming Language</h3>
-              <p>
-                C++ <br />
-                C# <br />
-                JavaScript <br />
-                Python <br />
-                Java
-              </p>
-            </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/img/about.jpg" alt="" />
           </div>
 
-          <div class="skills-card">
+          <div>
+            <h2 class="about__subtitle">I'am Mohamed Amir</h2>
+            <p class="about__text">
+              Highly skilled computer science student with a strong background
+              in solid grasp of computer science and programming fundamentals.
+              Experienced in contributing to software projects, with a
+              particular focus on backend development. Familiar with C#, C++,
+              Python, Java and JS and adept at utilizing frameworks such as
+              Node.js, Express.js, and REST APIs. Effective team player and
+              leader with excellent problem solving and research skills. Quick
+              learner who adapts to different technologies and tools, with a
+              keen awareness of backend development principles and practices
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="content">
+          <div class="row">
+            <div class="skills-card">
+              <div class="icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="info">
+                <h3>Frontend</h3>
+                <p>
+                  HTML <i class="fab fa-html5"></i><br />CSS
+                  <i class="fab fa-css3-alt"></i><br />
+                  JavaScript <i class="fab fa-js"></i>
+                </p>
+              </div>
+            </div>
+            <div class="skills-card">
+              <div class="icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <div class="info">
+                <h3>Backend</h3>
+                <p>
+                  Node.js <i class="fab fa-node"></i><br />Express.js <br />REST
+                  APIs
+                </p>
+              </div>
+            </div>
+            <div class="skills-card">
+              <div class="icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="info">
+                <h3>Database</h3>
+                <p>MongoDB <br />MySQL <br />Oracle <br /></p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="skills-card">
+              <div class="icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="info">
+                <h3>Software principles</h3>
+                <p>
+                  Algorithms <br />
+                  Data Structures <br />
+                  OOP <br />
+                  DBMS <br />
+                  SDLC
+                </p>
+              </div>
+            </div>
+            <div class="skills-card">
+              <div class="icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="info">
+                <h3>Programming Language</h3>
+                <p>
+                  C++ <br />
+                  C# <br />
+                  JavaScript <br />
+                  Python <br />
+                  Java
+                </p>
+              </div>
+            </div>
+  
+            <div class="skills-card">
+              <div class="icon">
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <div class="info">
+                <h3>Tools</h3>
+                <p>
+                  Git <i class="fab fa-github"></i> <br />VS code <br />Postman
+                  <br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== WORK =====-->
+      <section class="projects" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="content">
+          <!-- Add more project cards here -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/img/main.jpeg" alt="UEFA Cafe Project" />
+            </div>
+            <div class="project-info">
+              <p class="project-category">Football Leagues match results</p>
+              <strong class="project-title">UEFA Cafe</strong>
+              <a
+                href="https://github.com/Mohamed22198/Football-leagues"
+                class="more-details"
+                >More Details</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/img/market.png" alt="E-commerce Project" />
+            </div>
+            <div class="project-info">
+              <p class="project-category">Backend side for e-commerce website</p>
+              <strong class="project-title">E-commerce</strong>
+              <a
+                href="https://github.com/Mohamed22198/Market"
+                class="more-details"
+                >More Details</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact" id="contact">
+        <h2 class="section-title">Let's work together</h2>
+        <div class="content">
+          <div class="contact-card">
             <div class="icon">
-              <i class="fas fa-code-branch"></i>
+              <i class="fas fa-phone"></i>
             </div>
             <div class="info">
-              <h3>Tools</h3>
-              <p>
-                Git <i class="fab fa-github"></i> <br />VS code <br />Postman
-                <br />
-              </p>
+              <h3>Phone</h3>
+              <p>+201099523542</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info">
+              <h3>Email</h3>
+              <p>mooamir90@gmail.com</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section class="projects" id="projects">
-      <h2 class="title">Projects</h2>
-      <div class="content">
-        <!-- Add more project cards here -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/main.jpeg" alt="UEFA Cafe Project" />
-          </div>
-          <div class="project-info">
-            <p class="project-category">Football Leagues match results</p>
-            <strong class="project-title">UEFA Cafe</strong>
-            <a
-              href="https://github.com/Mohamed22198/Football-leagues"
-              class="more-details"
-              >More Details</a
-            >
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/market.png" alt="E-commerce Project" />
-          </div>
-          <div class="project-info">
-            <p class="project-category">Backend side for e-commerce website</p>
-            <strong class="project-title">E-commerce</strong>
-            <a
-              href="https://github.com/Mohamed22198/Market"
-              class="more-details"
-              >More Details</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2 class="title">Let's work together</h2>
-      <div class="content">
-        <div class="contact-card">
-          <div class="icon">
-            <i class="fas fa-phone"></i>
-          </div>
-          <div class="info">
-            <h3>Phone</h3>
-            <p>+201099523542</p>
-          </div>
-        </div>
-        <div class="contact-card">
-          <div class="icon">
-            <i class="fas fa-envelope"></i>
-          </div>
-          <div class="info">
-            <h3>Email</h3>
-            <p>mooamir90@gmail.com</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!--===== FOOTER =====-->
     <footer class="footer">
-      <p class="footer-title">Copyrights @ <span>Mohamed Amir</span></p>
+      <p class="footer__title">Mohamed</p>
       <div class="social-icons">
         <a href="https://www.linkedin.com/in/mohamed-amiir/"
           ><i class="fab fa-linkedin"></i
@@ -225,5 +294,11 @@
         ></a>
       </div>
     </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
