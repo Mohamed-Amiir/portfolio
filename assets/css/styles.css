@@ -3,6 +3,7 @@
 @media (max-width: 600px) {
   .nav-links {
     flex-direction: column;
+    color: white;
   }
 
   .skill-card,
@@ -13,6 +14,7 @@
 
 @media (max-width: 768px) {
   .menu-toggle {
+    color: white;
     display: block;
   }
 }
@@ -44,6 +46,7 @@
 
 @media screen and (min-width: 968px) {
   :root {
+    color: whi;
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
@@ -64,7 +67,7 @@ body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: var(--second-color);
+  background-color: #1f2937;
 }
 
 h1, h2, p {
@@ -128,12 +131,14 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color:#1f2937;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  color: white;
 }
 
 /*===== NAV =====*/
 .nav {
+  
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -149,7 +154,7 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--second-color);
+    background-color:#1f2937 ;
     transition: .5s;
   }
 }
@@ -160,14 +165,16 @@ img {
 
 .nav__link {
   position: relative;
-  color: #fff;
+  color:white;
 }
 
-.nav__link:hover {
+.nav__link:hover {    color: white;
+
   position: relative;
 }
 
-.nav__link:hover::after {
+.nav__link:hover::after {    color: white;
+
   position: absolute;
   content: '';
   width: 100%;
@@ -178,11 +185,10 @@ img {
 }
 
 .nav__logo {
-  color: var(--second-color);
+  color: white;
 }
 
 .nav__toggle {
-  color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
 }
