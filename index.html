@@ -13,7 +13,34 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     />
-
+    <style>
+      /* Style for the slideshow container */
+      .slideshow-container {
+        max-width: 300px;
+        position: relative;
+        margin: auto;
+      }
+  
+      /* Style for the slides */
+      .mySlides {
+        display: none;
+      }
+  
+      /* Style for the navigation dots */
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+  
+      .active {
+        background-color: #717171;
+      }
+    </style>
     <title>Mohamed Amir</title>
   </head>
   <body>
@@ -109,8 +136,20 @@
         <h2 class="section-title">About</h2>
 
         <div class="about__container bd-grid">
-          <div class="about__img">
-            <img src="assets/img/about.jpg" alt="" />
+          <div class="slideshow-container">
+            <!-- Slides -->
+            <div class="mySlides">
+              <img src="assets/img/me.jpg" alt="me" style="width: 200px;">
+            </div>
+          
+            <div class="mySlides">
+              <img src="assets/img/me2.jpg" alt="me" style="width: 200px;">
+            </div>
+          
+            <div class="mySlides">
+              <img src="assets/img/me3.jpg" alt="me" style="width: 200px;">
+            </div>
+          
           </div>
 
           <div>
@@ -322,5 +361,26 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+    <script>
+      // JavaScript to handle the slideshow functionality
+      var slideIndex = 0;
+      showSlides();
+    
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+     
+    
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change slide every 2 seconds
+      }
+    </script>
   </body>
 </html>

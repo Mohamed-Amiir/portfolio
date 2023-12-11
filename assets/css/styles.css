@@ -289,10 +289,18 @@ img {
 
 .about__img {
   justify-self: center;
+  display: none;
 }
 
 .about__img img {
-  width: 200px;
+  border-radius: .5rem;
+}
+.mySlides {
+  justify-self: center;
+  display: none;
+}
+
+.mySlides img {
   border-radius: .5rem;
 }
 
