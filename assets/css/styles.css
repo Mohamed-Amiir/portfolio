@@ -419,7 +419,7 @@ img {
 
 .project-card {
   background-color: #ffffff;
-  border: 1px solid #e0e0e0; /* Slightly softer border color */
+  border: 2px solid #375175; /* Slightly softer border color */
   width: 320px; /* Adjusted card width for better spacing */
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
@@ -445,12 +445,12 @@ img {
 
 .project-info {
   padding: 20px;
-  background-color: #ffffff; /* Match the card background color */
+  background-color: #1f2937; /* Match the card background color */
 }
 
 .project-category {
   font-size: 0.8em;
-  color: #777; /* Slightly muted category text color */
+  color: white; /* Slightly muted category text color */
   margin-bottom: 10px; /* More space between category and title */
 }
 
@@ -458,6 +458,7 @@ img {
   font-size: 1.2em;
   font-weight: 600;
   text-transform: uppercase;
+  color: white;
 }
 
 .more-details {

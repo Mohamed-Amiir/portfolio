@@ -19,13 +19,18 @@
         max-width: 300px;
         position: relative;
         margin: auto;
+        
       }
-  
+
       /* Style for the slides */
       .mySlides {
         display: none;
       }
-  
+      .mySlides img {
+        /* Add styles for individual slides here */
+        max-width: 100%; /* Ensure images don't exceed their container width */
+        height: auto; /* Maintain aspect ratio */
+      }
       /* Style for the navigation dots */
       .dot {
         height: 15px;
@@ -36,7 +41,7 @@
         display: inline-block;
         transition: background-color 0.6s ease;
       }
-  
+
       /* .active {
         background-color: ;
       } */
@@ -54,19 +59,27 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" style="color: white;" class="nav__link active">Home</a>
+              <a href="#home" style="color: white" class="nav__link active"
+                >Home</a
+              >
             </li>
             <li class="nav__item">
-              <a href="#about" style="color: white;" class="nav__link">About</a>
+              <a href="#about" style="color: white" class="nav__link">About</a>
             </li>
             <li class="nav__item">
-              <a href="#skills" style="color: white;" class="nav__link">Skills</a>
+              <a href="#skills" style="color: white" class="nav__link"
+                >Skills</a
+              >
             </li>
             <li class="nav__item">
-              <a href="#projects" style="color: white;" class="nav__link">Projects</a>
+              <a href="#projects" style="color: white" class="nav__link"
+                >Projects</a
+              >
             </li>
             <li class="nav__item">
-              <a href="#contact" style="color: white;" class="nav__link">Contact</a>
+              <a href="#contact" style="color: white" class="nav__link"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -86,22 +99,30 @@
             Junior Software Developer
           </h1>
 
-          <a href="https://drive.google.com/file/d/1UzBrwTlMbjSS2l_FU9sD9vLlKuttG9lc/view?usp=drive_link" class="button">Resume</a>
+          <a
+            href="https://drive.google.com/file/d/1UzBrwTlMbjSS2l_FU9sD9vLlKuttG9lc/view?usp=drive_link"
+            class="button"
+            >Resume</a
+          >
         </div>
 
         <div class="home__social">
-          <a href="https://www.linkedin.com/in/mohamed-amiir/" class="home__social-icon"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-        <a href="https://github.com/Mohamed22198"class="home__social-icon"
-          ><i class="bx bxl-github"></i
-        ></a>
-        <a href="https://wa.me/+201099523542"class="home__social-icon"
-          ><i class="bx bxl-whatsapp"></i
-        ></a>
-        <a href="https://www.facebook.com/profile.php?id=100009078180663"class="home__social-icon"
-          ><i class="bx bxl-facebook"></i
-        ></a>
+          <a
+            href="https://www.linkedin.com/in/mohamed-amiir/"
+            class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/Mohamed22198" class="home__social-icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://wa.me/+201099523542" class="home__social-icon"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100009078180663"
+            class="home__social-icon"
+            ><i class="bx bxl-facebook"></i
+          ></a>
         </div>
 
         <div class="home__img">
@@ -139,17 +160,16 @@
           <div class="slideshow-container">
             <!-- Slides -->
             <div class="mySlides">
-              <img src="assets/img/me.jpg" alt="me" style="width: 200px;">
+              <img src="assets/img/me.jpg" alt="me" style="width: 250px" />
             </div>
-          
+
             <div class="mySlides">
-              <img src="assets/img/me2.jpg" alt="me" style="width: 200px;">
+              <img src="assets/img/me2.jpg" alt="me" style="width: 200px" />
             </div>
-          
+
             <div class="mySlides">
-              <img src="assets/img/me3.jpg" alt="me" style="width: 200px;">
+              <img src="assets/img/me3.jpg" alt="me" style="width: 260px" />
             </div>
-          
           </div>
 
           <div>
@@ -183,7 +203,7 @@
                 <p>
                   HTML <i class="fab fa-html5"></i><br />
                   CSS <i class="fab fa-css3-alt"></i><br />
-                  JavaScript <i class="fab fa-js"></i><br/>
+                  JavaScript <i class="fab fa-js"></i><br />
                   React.js <i class="fab fa-react"></i>
                 </p>
               </div>
@@ -241,7 +261,7 @@
                 </p>
               </div>
             </div>
-  
+
             <div class="skills-card">
               <div class="icon">
                 <i class="fas fa-code-branch"></i>
@@ -268,7 +288,6 @@
               <img src="assets/img/main.jpeg" alt="UEFA Cafe Project" />
             </div>
             <div class="project-info">
-              
               <strong class="project-title">UEFA Cafe</strong>
               <p class="project-category">Football Leagues match results</p>
               <a
@@ -284,8 +303,10 @@
             </div>
             <div class="project-info">
               <strong class="project-title">E-commerce</strong>
-              <p class="project-category">Backend side for e-commerce website</p>
-              
+              <p class="project-category">
+                Backend side for e-commerce website
+              </p>
+
               <a
                 href="https://github.com/Mohamed22198/Market"
                 class="more-details"
@@ -298,8 +319,9 @@
               <img src="assets/img/modeling.png" alt="Simulation project" />
             </div>
             <div class="project-info">
-              
-              <strong class="project-title">Modeling And Simulation Project</strong>
+              <strong class="project-title"
+                >Modeling And Simulation</strong
+              >
               <p class="project-category">Multi Queue Simulation</p>
               <a
                 href="https://github.com/MohamedGamalBarghash/Modelling-and-Simulation-Project"
@@ -341,18 +363,22 @@
     <footer class="footer">
       <p class="footer__title">Mohamed</p>
       <div class="footer__social">
-        <a href="https://www.linkedin.com/in/mohamed-amiir/" class="footer__social-icon"
-        ><i class="bx bxl-linkedin"></i
-      ></a>
-      <a href="https://github.com/Mohamed22198"class="footer__social-icon"
-        ><i class="bx bxl-github"></i
-      ></a>
-      <a href="https://wa.me/+201099523542"class="footer__social-icon"
-        ><i class="bx bxl-whatsapp"></i
-      ></a>
-      <a href="https://www.facebook.com/profile.php?id=100009078180663"class="footer__social-icon"
-        ><i class="bx bxl-facebook"></i
-      ></a>
+        <a
+          href="https://www.linkedin.com/in/mohamed-amiir/"
+          class="footer__social-icon"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a href="https://github.com/Mohamed22198" class="footer__social-icon"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a href="https://wa.me/+201099523542" class="footer__social-icon"
+          ><i class="bx bxl-whatsapp"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100009078180663"
+          class="footer__social-icon"
+          ><i class="bx bxl-facebook"></i
+        ></a>
       </div>
     </footer>
 
@@ -365,7 +391,7 @@
       // JavaScript to handle the slideshow functionality
       var slideIndex = 0;
       showSlides();
-    
+
       function showSlides() {
         var i;
         var slides = document.getElementsByClassName("mySlides");
@@ -376,8 +402,7 @@
         if (slideIndex > slides.length) {
           slideIndex = 1;
         }
-     
-    
+
         slides[slideIndex - 1].style.display = "block";
         setTimeout(showSlides, 5000); // Change slide every 2 seconds
       }
