@@ -418,7 +418,7 @@ img {
 }
 
 .project-card {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   border: 2px solid #375175; /* Slightly softer border color */
   width: 320px; /* Adjusted card width for better spacing */
   border-radius: 10px;
