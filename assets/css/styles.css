@@ -229,6 +229,10 @@ img {
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
+  .job-title{
+    font-size:60%;
+    color: rgb(31, 202, 31);
+  }
 }
 
 .home__title-color {
