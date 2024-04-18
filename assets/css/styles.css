@@ -1,9 +1,11 @@
 /*===== GOOGLE FONTS =====*/
+
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @media (max-width: 600px) {
   .nav-links {
     flex-direction: column;
-    color: white;
+    color: #d7f4fb;
   }
 
   .skill-card,
@@ -14,7 +16,7 @@
 
 @media (max-width: 768px) {
   .menu-toggle {
-    color: white;
+    color: #d7f4fb;
     display: block;
   }
 }
@@ -26,8 +28,8 @@
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
   --hue-color: 224;
-  --first-color: hsl(var(--hue-color), 89%, 60%);
-  --second-color: hsl(var(--hue-color), 56%, 12%);
+  --first-color: #78d8f1;
+  --second-color: #a02010;
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
@@ -43,7 +45,14 @@
   --z-back: -10;
   --z-fixed: 100;
 }
+/*
+--text: #d7f4fb;
+--background: #020d11;
+--primary: #78d8f1;
+--secondary: #a02010;
+--accent: #eca03d;
 
+*/
 @media screen and (min-width: 968px) {
   :root {
     color: whi;
@@ -69,18 +78,16 @@ body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: #1f2937;
+  background-color: #020d11;
 }
 
-h1,
+/* h1,
 h2,
 p {
   margin: 0;
-}
+} */
 
 ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -98,7 +105,7 @@ img {
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
-  color: var(--first-color);
+  color: #d7f4fb;
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
@@ -113,7 +120,7 @@ img {
   right: 0;
   margin: auto;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: var(--second-color);
 }
 
 .section {
@@ -135,9 +142,9 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #1f2937;
+  background-color: #020d11;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
-  color: white;
+  color: #d7f4fb;
 }
 
 /*===== NAV =====*/
@@ -157,7 +164,7 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: #1f2937;
+    background-color: #020d11;
     transition: 0.5s;
   }
 }
@@ -168,17 +175,17 @@ img {
 
 .nav__link {
   position: relative;
-  color: white;
+  color: #d7f4fb;
 }
 
 .nav__link:hover {
-  color: white;
+  color: #d7f4fb;
 
   position: relative;
 }
 
 .nav__link:hover::after {
-  color: white;
+  color: #d7f4fb;
 
   position: absolute;
   content: "";
@@ -186,11 +193,11 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: var(--second-color);
 }
 
 .nav__logo {
-  color: white;
+  color: #d7f4fb;
 }
 
 .nav__toggle {
@@ -206,7 +213,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: var(--second-color);
 }
 
 /*=== Show menu ===*/
@@ -222,7 +229,7 @@ img {
 }
 
 .home__data {
-  color: white;
+  color: #d7f4fb;
   align-self: center;
 }
 
@@ -231,12 +238,12 @@ img {
   margin-bottom: var(--mb-5);
   .job-title{
     font-size:60%;
-    color: rgb(31, 202, 31);
+    color: #ddba22;
   }
 }
 
 .home__title-color {
-  color: var(--first-color); /**/
+  color: var(--first-color); 
 }
 
 .home__social {
@@ -248,11 +255,11 @@ img {
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
-  color: white;
+  color: #d7f4fb;
 }
 
 .home__social-icon:hover {
-  color: var(--first-color); /**/
+  color: var(--second-color);
 }
 
 .home__img {
@@ -263,7 +270,7 @@ img {
 }
 
 .home__blob {
-  fill: var(--first-color);
+  fill: #841517;
 }
 
 .home__blob-img {
@@ -273,7 +280,7 @@ img {
 /*BUTTONS*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  /* background-color: var(--first-color); */
   color: #fff;
   padding: 0.75rem 2.5rem;
   font-weight: var(--font-semi);
@@ -287,7 +294,7 @@ img {
 
 /* ===== ABOUT =====*/
 .about__container {
-  color: white;
+  color: #d7f4fb;
   row-gap: 2rem;
   text-align: center;
 }
@@ -323,7 +330,7 @@ img {
 .title {
   display: flex;
   justify-content: center;
-  color: var(--first-color);
+  /* color: var(--first-color); */
   font-size: 2.8em; /* Larger font size */
   font-weight: 900; /* Bolder font weight */
   margin-bottom: 40px; /* Increased margin */
@@ -345,7 +352,7 @@ img {
 
 .skills-card {
   width: 220px;
-  background-color: #1f2937;
+  background-color:hsl(213, 73%, 71%, 5%);;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 20px;
@@ -395,7 +402,7 @@ img {
 }
 
 .info h3 {
-  color: var(--first-color);
+  color: var(--second-color);
   font-size: 1.6em;
   font-weight: 700;
   margin: 20px 0;
@@ -406,7 +413,7 @@ img {
 }
 
 .info p {
-  color: white;
+  color: #d7f4fb;
   font-size: 1.3em;
   margin: 10px 0;
   line-height: 1.4;
@@ -464,12 +471,12 @@ img {
 
 .project-info {
   padding: 20px;
-  background-color: #1f2937; /* Match the card background color */
+  background-color: #020d11; /* Match the card background color */
 }
 
 .project-category {
   font-size: 0.8em;
-  color: white; /* Slightly muted category text color */
+  color: #d7f4fb; /* Slightly muted category text color */
   margin-bottom: 10px; /* More space between category and title */
 }
 
@@ -477,7 +484,7 @@ img {
   font-size: 1.2em;
   font-weight: 600;
   text-transform: uppercase;
-  color: white;
+  color: #d7f4fb;
 }
 
 .more-details {
@@ -512,6 +519,7 @@ img {
   padding: 25px;
   margin: 15px;
   transition: 0.7s ease;
+  background-color: hsl(213, 73%, 71%, 5%);;
 }
 
 .contact-card:hover {
@@ -519,7 +527,7 @@ img {
 }
 
 .contact-card .icon {
-  color: white;
+  color: #d7f4fb;
   font-size: 5em;
   text-align: center;
 }
@@ -536,7 +544,7 @@ img {
 }
 
 .contact-card .info p {
-  color: white;
+  color: #d7f4fb;
   font-size: 1.2em;
   font-weight: 700;
   margin: 10px;
@@ -544,7 +552,7 @@ img {
 /* ===== FOOTER =====*/
 .footer {
   box-shadow: 0 1px 8px rgba(228, 230, 233, 0.15);
-  background-color: #1f2937;
+  background-color: #020d11;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -568,7 +576,7 @@ img {
 
 .footer__social-icon {
   font-size: 1rem;
-  color: white;
+  color: #d7f4fb;
 }
 
 .footer__social-icon:hover {

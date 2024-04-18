@@ -1,0 +1,60 @@
+--text-50: #e9f2fb;
+--text-100: #d3e4f8;
+--text-200: #a7caf1;
+--text-300: #7bafea;
+--text-400: #5094e2;
+--text-500: #2479db;
+--text-600: #1d61af;
+--text-700: #154984;
+--text-800: #0e3158;
+--text-900: #07182c;
+--text-950: #040c16;
+
+--background-50: #e9f1fc;
+--background-100: #d3e4f8;
+--background-200: #a7c8f1;
+--background-300: #7badea;
+--background-400: #4f92e3;
+--background-500: #2276dd;
+--background-600: #1c5fb0;
+--background-700: #154784;
+--background-800: #0e2f58;
+--background-900: #07182c;
+--background-950: #030c16;
+
+--primary-50: #e9f1fc;
+--primary-100: #d3e4f8;
+--primary-200: #a7c8f1;
+--primary-300: #7badea;
+--primary-400: #4f92e3;
+--primary-500: #2276dd;
+--primary-600: #1c5fb0;
+--primary-700: #154784;
+--primary-800: #0e2f58;
+--primary-900: #07182c;
+--primary-950: #030c16;
+
+--secondary-50: #fce9e9;
+--secondary-100: #f8d3d4;
+--secondary-200: #f1a7a8;
+--secondary-300: #ea7b7d;
+--secondary-400: #e34f51;
+--secondary-500: #dd2226;
+--secondary-600: #b01c1e;
+--secondary-700: #841517;
+--secondary-800: #580e0f;
+--secondary-900: #2c0708;
+--secondary-950: #160304;
+
+--accent-50: #fcf8e9;
+--accent-100: #f8f1d3;
+--accent-200: #f1e4a7;
+--accent-300: #ead67b;
+--accent-400: #e3c84f;
+--accent-500: #ddba22;
+--accent-600: #b0951c;
+--accent-700: #847015;
+--accent-800: #584b0e;
+--accent-900: #2c2507;
+--accent-950: #161303;
+
